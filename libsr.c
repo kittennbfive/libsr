@@ -18,7 +18,7 @@ AGPLv3+ and NO WARRANTY!
 
 Please read the fine manual.
 
-version 0.01
+version 0.02
 */
 
 typedef struct
@@ -129,6 +129,7 @@ static void parse_line(char * l)
 		channels=realloc(channels, (nb_channels_parsed+1)*sizeof(channel_t));
 		channels[nb_channels_parsed].number=number;
 		strncpy(channels[nb_channels_parsed].name, name, LENGTH_NAME_MAX);
+		channels[nb_channels_parsed].name[LENGTH_NAME_MAX]='\0';
 		nb_channels_parsed++;
 		//printf("parsed channel %s, now %u channels\n", name, nb_channels_parsed);
 	}

@@ -14,7 +14,7 @@ AGPLv3+ and NO WARRANTY!
 
 Please read the fine manual.
 
-version 0.01
+version 0.02
 */
 
 #define LENGTH_NAME_MAX 20
